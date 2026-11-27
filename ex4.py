@@ -5,16 +5,16 @@ students = [
     ("Анна", 20, 4.9)
 ]
 
-oldest = max(students, key=lambda s: s[1])
+oldest = max(students, key=lambda s: s[1]) # Поиск самого старшего студента
 print(f"Самый старший: {oldest[0]}, {oldest[1]} лет")
 
-best = max(students, key=lambda s: s[2])
+best = max(students, key=lambda s: s[2]) # Поиск самого лучшего
 print(f"Лучший студент: {best[0]}, балл {best[2]}")
 
-avg_age = sum(s[1] for s in students) / len(students)
+avg_age = sum(s[1] for s in students) / len(students) # Вычисление среднего возраста
 print(f"Средний возраст: {avg_age:.1f}")
 
-sorted_students = sorted(students, key=lambda s: s[2], reverse=True)
+sorted_students = sorted(students, key=lambda s: s[2], reverse=True) # Сортировка по убыванию балла
 print("\nПо баллу:")
 for name, age, gpa in sorted_students:
     print(f"{name}: {gpa}")

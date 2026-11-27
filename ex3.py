@@ -4,12 +4,12 @@ matrix = [
     [7, 8, 9],
 ]
 
-transposed = [list(row) for row in zip(*matrix)]
+transposed = [list(row) for row in zip(*matrix)] # Создаем транспонирование
 
-print("Исходная матрица:")
-for row in matrix:
+print("Исходная матрица:") # Заголовок исходной матрицы
+for row in matrix: # Цикл по строкам матрицы
     print(row)
 
-print("\nТранспонированная матрица:")
-for row in transposed:
+print("\nТранспонированная матрица:") # Заголовок транспонированной матрицы
+for row in transposed: # Цикл по строкам результата
     print(row)
